@@ -1,105 +1,107 @@
 const menuList = {
     
     appetizers: [
-        {
-            name: "Appet 1",
-            descriprion: "Descriprion 1",
-            price: "$3"
+        {   
+            
+            name: "Hummus",
+            description: "Cooked, mashed chickpeas blended with tahini, lemon juice, and garlic.",
+            price: "$4",
+            
         },
         {
-            name: "Appet 2",
-            descriprion: "Descriprion 2",
-            price: "$3"
+            name: "Baba ghanoush",
+            description: "Cooked eggplant, olive oil, lemon juice, various seasonings",
+            price: "$4"
         },
         {
-            name: "Appet 3",
-            descriprion: "Descriprion 3",
-            price: "$3"
+            name: "Falafel",
+            description: "A deep-fried ball or patty-shaped fritter made from ground chickpeas, broad beans",
+            price: "$4"
         }
     ],
     soups: [
         {
-            name: "Soup 1",
-            descriprion: "Descriprion 1",
-            price: "$3"
+            name: "Lentil soup",
+            description: "Based on lentils;",
+            price: "$6"
         },
         {
-            name: "Soup 2",
-            descriprion: "Descriprion 2",
-            price: "$3"
+            name: "Chicken soup",
+            description: "Classic chicken soup consists of chicken,vegetables and noodles",
+            price: "$6"
         },
         {
-            name: "Soup 3",
-            descriprion: "Descriprion 3",
-            price: "$3"
+            name: "Vegetable soup",
+            description: "prepared using vegetables and leaf vegetables as primary ingredients",
+            price: "$6"
         }
     ],
     salads: [
         {
-            name: "Salad 1",
-            descriprion: "Descriprion 1",
-            price: "$3"
+            name: "Garden salad",
+            description: "Made of lettuce, endive, tomatoes, radishes, carrots, and cucumbers",
+            price: "$5"
         },
         {
-            name: "Salad 2",
-            descriprion: "Descriprion 2",
-            price: "$3"
+            name: "Caesar salad",
+            description: "Classic Caesar salad",
+            price: "$5"
         },
         {
-            name: "Salad 3",
-            descriprion: "Descriprion 3",
-            price: "$3"
+            name: "Greek salad",
+            description: "Consists of sliced cucumbers, tomatoes, green bell pepper, red onion, olives, and feta cheese.",
+            price: "$4"
         }
     ],
     entrees: [
         {
-            name: "Entree 1",
-            descriprion: "Descriprion 1",
-            price: "$3"
+            name: "Chicken kebab",
+            description: "Served with rice and salad",
+            price: "$13"
         },
         {
-            name: "Entree 2",
-            descriprion: "Descriprion 2",
-            price: "$3"
+            name: "Lamb kebab",
+            description: "Served with rice and salad",
+            price: "$15"
         },
         {
-            name: "Entree 3",
-            descriprion: "Descriprion 3",
-            price: "$3"
+            name: "Beef kebab",
+            description: "Served with rice and salad",
+            price: "$13"
         }
     ],
     deserts: [
         {
-            name: "Desert 1",
-            descriprion: "Descriprion 1",
-            price: "$3"
+            name: "Baklava",
+            description: "Layered pastry dessert made of filo pastry, filled with chopped nuts, and sweetened with syrup or honey.",
+            price: "$4"
         },
         {
-            name: "Desert 2",
-            descriprion: "Descriprion 2",
-            price: "$3"
+            name: "Home-style cake",
+            description: "Vanila with berries",
+            price: "$7"
         },
         {
-            name: "Desert 3",
-            descriprion: "Descriprion 3",
-            price: "$3"
+            name: "Cheese cake",
+            descririon: "Strawberry and vanila",
+            price: "$7"
         }
     ],
     drinks: [
         {
-            name: "Drink 1",
-            descriprion: "Descriprion 1",
-            price: "$3"
+            name: "Ayran",
+            description: "Yogurt drink",
+            price: "$2"
         },
         {
-            name: "Drink 2",
-            descriprion: "Descriprion 2",
-            price: "$3"
+            name: "Soda",
+            description: "Coke products",
+            price: "$2"
         },
         {
-            name: "Drink 3",
-            descriprion: "Descriprion 3",
-            price: "$3"
+            name: "Water",
+            description: "Aquafina water",
+            price: "$1"
         }
     ]
         

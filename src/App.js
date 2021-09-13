@@ -14,6 +14,40 @@ import "./App.css"
 const App = () => {
 
   const [menuData, setMenuData] = useState(menuList)
+  const [cartItems, setCartItems] = useState([])
+  //console.log(cartItems,"this is our cartItems array")
+  
+  const addToCart = (item ) => {
+    //console.log("hey we got here because you clicked on an item", item)
+    //console.log(cartItems)
+    let currentCartItems = cartItems
+    currentCartItems.unshift(item)
+    setCartItems(
+		  currentCartItems
+		);
+	};
+  
+  
+  // const removeFromCart = (item) => {
+  //   let list = [...currentCartItems]
+  //   currentCartItems.filter( currentCartItems.name !== item.name )
+  //   setCartItems(list)
+  // }
+
+
+  const removeFromCart = (item)=> {
+    let currentCartItems = cartItems;
+    console.log(item)
+    console.log(currentCartItems)
+    currentCartItems.splice(currentCartItems.indexOf(item), 1);
+    setCartItems(currentCartItems);
+}
+
+//console.log(currentCartItems, "app 42")
+
+
+
+
   
 
   // useEffect is debugging the code (used to check if I have an access to menuList)
@@ -34,11 +68,11 @@ const App = () => {
          </Route> 
           
         <Route path="/menu">
-          <Menu menuData={menuData}/> 
+          <Menu menuData={menuData}  addToCart={addToCart}/> 
         </Route>
 
         <Route path="/shoppingcart">
-          <Shoppingcart/>
+          <Shoppingcart handleAdd = {addToCart} cartItems={cartItems} removeFromCart={removeFromCart} />
         </Route>        
 
       </Switch> 

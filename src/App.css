@@ -1,13 +1,14 @@
 #app{
-  height: 100vh;
-  display: flex;
+  height: 100%;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   background-color: blanchedalmond;
   font-family: fantasy;
   font-weight: bold;
   font-size: larger;
+  
 }
 
 #header{ 
@@ -25,3 +26,130 @@
   justify-content: space-evenly;
   list-style: none;
 }
+
+#section{
+  border: solid black 1px;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+.shopping-cart{
+  border: solid black 1px;
+  width: 400px;
+  align-items: center;
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "name price btn"
+}
+.name { grid-area: appetizers; }
+.price { grid-area: app1; }
+.btn { grid-area: appt2; }
+
+#item-section{
+  display: flex;
+  border: solid black 1px;
+  justify-content: space-around;
+  
+}
+
+button{
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  margin:0.1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #404040 solid;
+  background-color: #f0c040;
+  height: 1.5rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+/* .container{
+  display: flex;
+  justify-content: space-around;
+} */
+
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 30px 30px; 
+  grid-template-areas: 
+    "appetizers appetizers appetizers"
+    "app1 desc1 price1"
+    "app2 desc2 price2"
+    "app3 desc3 price3"
+    "btn btn btn"
+    "soups soups soups"
+    "soup1 soup2 soup3"
+    "soup1 soup2 soup3"
+    "soup1 soup2 soup3"
+    "btn btn btn"
+    "salads salads salads"
+    "salad1 salad2 salad3"
+    "salad1 salad2 salad3"
+    "salad1 salad2 salad3"
+    "btn btn btn"
+    "entrees entrees entrees"
+    "ent1 ent2 ent3"
+    "ent1 ent2 ent3"
+    "ent1 ent2 ent3"
+    "btn btn btn"
+    "desserts desserts desserts"
+    "des1 des2 des3"
+    "des1 des2 des3"
+    "des1 des2 des3"
+    "btn btn btn"
+    "drinks drinks drinks"
+    "drk1 drk2 drk3"
+    "drk1 drk2 drk3"
+    "drk1 drk2 drk3"
+    "btn btn btn";
+}
+.appetizers { grid-area: appetizers; }
+.app1 { grid-area: app1; }
+.appt2 { grid-area: appt2; }
+.app3 { grid-area: app3; }
+.btn1 { grid-area: btn; }
+.btn2 { grid-area: btn2; }
+.btn3 { grid-area: btn3; }  
+.soups { grid-area: soups; }
+.soup1 { grid-area: soup1; }
+.soup2 { grid-area: soup2; }
+.soup3 { grid-area: soup3; }
+.btn1 { grid-area: btn; }
+.btn2 { grid-area: btn2; }
+.btn3 { grid-area: btn3; }  
+.salads { grid-area: salads; }
+.salad1 { grid-area: salad1; }
+.salad2 { grid-area: salad2; }
+.salad3 { grid-area: salad3; }
+.btn1 { grid-area: btn; }
+.btn2 { grid-area: btn2; }
+.btn3 { grid-area: btn3; }  
+.entrees { grid-area: entrees; }
+.ent1 { grid-area: ent1; }
+.ent2 { grid-area: ent2; }
+.ent3 { grid-area: ent3; }
+.btn1 { grid-area: btn; }
+.btn2 { grid-area: btn2; }
+.btn3 { grid-area: btn3; } 
+.desserts { grid-area: desserts; }
+.des1 { grid-area: des1; }
+.des2 { grid-area: des2; }
+.des3 { grid-area: des3; }
+.btn1 { grid-area: btn; }
+.btn2 { grid-area: btn2; }
+.btn3 { grid-area: btn3; }  
+.drinks { grid-area: drinks; }
+.drk1 { grid-area: drk1; }
+.drk2 { grid-area: drk2; }
+.drk3 { grid-area: drk3; }
+.btn1 { grid-area: btn; }
+.btn2 { grid-area: btn2; }
+.btn3 { grid-area: btn3; }  
