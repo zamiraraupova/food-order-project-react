@@ -1,14 +1,10 @@
 #app{
-  height: 100%;
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: space-between;
+  height: 500px;
   /* align-items: center; */
-  background-color: blanchedalmond;
   font-family: fantasy;
   font-weight: bold;
   font-size: larger;
-  
+  background-color: blanchedalmond;
 }
 
 #header{ 
@@ -27,34 +23,44 @@
   list-style: none;
 }
 
+.home-page{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.immediate.co.uk/production/volatile/sites/2/2020/07/OliveSkewers_IndianKebabs_preview-48ce677.jpg?quality=90&resize=768,574");
+}
+
+#home-page-text{
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
 #section{
-  border: solid black 1px;
+  height: 400px;
   text-align: center;
-}
-
-h3{
-  text-align: center;
-}
-
-.shopping-cart{
-  border: solid black 1px;
-  width: 400px;
-  align-items: center;
-  display:grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 
-    "name price btn"
-}
-.name { grid-area: appetizers; }
-.price { grid-area: app1; }
-.btn { grid-area: appt2; }
-
-#item-section{
-  display: flex;
-  border: solid black 1px;
-  justify-content: space-around;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   
 }
+#item-section{
+  display: flex;
+  /* border: solid black 1px; */
+  justify-content: space-around;
+}
+#shopping-cart-section{
+  text-align: center;
+  width: 50%;
+  height: 400px;
+  align-items: center;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    
+}
+#shopping-cart-item-section{
+  display: flex;
+  /* border: solid black 1px; */
+  justify-content: space-around;
+}
+
 
 button{
   font-size: 0.8rem;
@@ -63,19 +69,15 @@ button{
   border-radius: 0.5rem;
   border: 0.1rem #404040 solid;
   background-color: #f0c040;
-  height: 1.5rem;
+  height: 2rem;
   cursor: pointer;
-  align-items: center;
+  
 }
 
-/* .container{
-  display: flex;
-  justify-content: space-around;
-} */
-
-
-.container {
+.menu-page {
   display: grid; 
+  height: 135vh;
+  background-color: blanchedalmond;
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
   gap: 30px 30px; 

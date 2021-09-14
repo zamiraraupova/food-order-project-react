@@ -4,7 +4,7 @@ const Menu = (props) => {
     //console.log(props.menuData.appetizers)
     
     return (
-        <div className="container">
+        <div className="menu-page">
             {/* I will pass a menuData using props
                 I need a section for each section (appet/salads) and component */}
                     

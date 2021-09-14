@@ -26,10 +26,10 @@ function MenuItems(props) {
         <div id="item-section">
             <image />
             <div id="name"> <h3> {props.item.name} </h3> </div>
-            <div id="descriprion"> <h5> {props.item.description} </h5> </div>
-            <div id="price"> <h4> {props.item.price} </h4> </div>
+            <div id="description"> <h5> {props.item.description} </h5> </div>
+            <div id="price"> <h4> ${props.item.price} </h4> </div>
             
-            <button onClick={()=> props.addToCart(props.item)}>Add to Cart</button>
+            <button onClick={()=> props.addToCart(props.item)}>Add</button>
         </div>
     )
 }

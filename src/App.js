@@ -26,14 +26,6 @@ const App = () => {
 		  currentCartItems
 		);
 	};
-  
-  
-  // const removeFromCart = (item) => {
-  //   let list = [...currentCartItems]
-  //   currentCartItems.filter( currentCartItems.name !== item.name )
-  //   setCartItems(list)
-  // }
-
 
   const removeFromCart = (item)=> {
     let currentCartItems = cartItems;
@@ -44,11 +36,6 @@ const App = () => {
 }
 
 //console.log(currentCartItems, "app 42")
-
-
-
-
-  
 
   // useEffect is debugging the code (used to check if I have an access to menuList)
   // useEffect(() => {
