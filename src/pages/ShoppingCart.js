@@ -18,12 +18,12 @@ const Shoppingcart = (props) => {
                         <div id="btn"> <button onClick={() => props.removeFromCart(item)}>Remove</button> </div>
                 </div> 
                
-                <div>
+                {/* <div>
                    purchased item: {props.cartItems.length} 
                </div>
                 <div> 
                     total:
-                </div>
+                </div> */}
                 {/* <div> 
                     {/* <button onClick={() => handleAdd()} className="add">+</button> 
                  </div> */}
