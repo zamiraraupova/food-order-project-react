@@ -6,10 +6,8 @@ import NavBar from './components/NavBar'
 import Home from './pages/Home'
 import Menu from './pages/Menu'
 import Shoppingcart from './pages/ShoppingCart'
-
-
 import "./App.css"
-
+//import kebab2 from "../image/kebab2."
 
 const App = () => {
 
@@ -27,15 +25,12 @@ const App = () => {
 		);
 	};
 
-  const removeFromCart = (item)=> {
-    let currentCartItems = cartItems;
-    console.log(item)
-    console.log(currentCartItems)
-    currentCartItems.splice(currentCartItems.indexOf(item), 1);
-    setCartItems(currentCartItems);
+  const removeFromCart = (item)=> { // item - refers in the ShoppingCart.js
+    //console.log(item)
+    setCartItems( cartItems.filter((food) => { // reads from inside out. Filter is coming first and then it changes the state
+     return food.name !== item.name
+   }))
 }
-
-//console.log(currentCartItems, "app 42")
 
   // useEffect is debugging the code (used to check if I have an access to menuList)
   // useEffect(() => {
@@ -64,9 +59,8 @@ const App = () => {
 
       </Switch> 
       
-     
-          
-      
+      {/* <img className="kebab2" src={kebab2} alt="kebab2"></img> */}
+              
     </div>
   )
 }

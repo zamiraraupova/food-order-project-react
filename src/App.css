@@ -4,20 +4,20 @@
   font-family: fantasy;
   font-weight: bold;
   font-size: larger;
-  background-color: blanchedalmond;
+  background-image: url("");
 }
 
 #header{ 
    font-size:xx-large;
 }
 
-#nav-bar {
+.nav-bar {
   background-color: rgb(214, 147, 71);
   height: 100px;
   width: 100%;
 }
 
-#nav-bar ul {
+.nav-bar ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -26,7 +26,7 @@
 .home-page{
   height: 100vh;
   width: 100%;
-  background-image: url("https://images.immediate.co.uk/production/volatile/sites/2/2020/07/OliveSkewers_IndianKebabs_preview-48ce677.jpg?quality=90&resize=768,574");
+  /* background-image: url("https://images.immediate.co.uk/production/volatile/sites/2/2020/07/OliveSkewers_IndianKebabs_preview-48ce677.jpg?quality=90&resize=768,574"); */
 }
 
 #home-page-text{
@@ -34,33 +34,45 @@
   color: rgb(0, 0, 0);
 }
 
-#section{
-  height: 400px;
+.section{
+  background-color: white;
+  margin: 20px;
   text-align: center;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   
 }
-#item-section{
+.item-section{
   display: flex;
   /* border: solid black 1px; */
   justify-content: space-around;
 }
-#shopping-cart-section{
+.shopping-cart-page{
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
   text-align: center;
+  align-items: center;
   width: 50%;
   height: 400px;
   align-items: center;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);   
 }
-#shopping-cart-item-section{
+h2{
+  text-align: center;
+}
+#shopping-cart-section{
   display: flex;
-  /* border: solid black 1px; */
+  border: solid black 1px; 
   justify-content: space-around;
+  align-items: center;
+  
+  }
+#check-out{
+  display: flex;
+  justify-content: center;
 }
-
 
 button{
   font-size: 0.8rem;
@@ -74,13 +86,26 @@ button{
   
 }
 
+
+.item-section img{
+  height: 70px;
+  width: 70px;
+}
+#cart{
+  height: 1cm;
+  width: 1cm;
+  position: relative;
+  bottom: 0.5cm;
+  
+}
+
 .menu-page {
+  background-color: antiquewhite;
+  height: 140vh;
   display: grid; 
-  height: 135vh;
-  background-color: blanchedalmond;
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 30px 30px; 
+  gap: 5px 5px; 
   grid-template-areas: 
     "appetizers appetizers appetizers"
     "app1 desc1 price1"

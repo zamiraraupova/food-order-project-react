@@ -6,7 +6,7 @@ function Section(props) {
     //console.log(props.name)
     //console.log(props.menuItem)
     return (
-        <div id="section">
+        <div className="section">
             <h3>{props.name}</h3>
            
             {/* mapping every single menu item  */}
