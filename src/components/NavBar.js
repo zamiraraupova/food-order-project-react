@@ -13,9 +13,9 @@ const NavBar = () => {
         </div>
         
         <ul>
-            <li><Link to="/home"> <img id="cart" src={home} alt="home"></img></Link></li>
-            <li><Link to="/menu"> <img id="cart" src={menu} alt="menu"></img></Link></li>
-            <li><Link to="/shoppingcart"><img id="cart" src={cart} alt="cart"></img></Link> </li>
+            <li><Link to="/home"> <img id="nav-icon" src={home} alt="home"></img></Link></li>
+            <li><Link to="/menu"> <img id="nav-icon" src={menu} alt="menu"></img></Link></li>
+            <li><Link to="/shoppingcart"><img id="nav-icon" src={cart} alt="cart"></img></Link> </li>
         </ul>
         </nav>
     )

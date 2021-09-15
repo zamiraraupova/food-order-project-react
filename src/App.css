@@ -1,79 +1,81 @@
 #app{
-  height: 500px;
-  /* align-items: center; */
   font-family: fantasy;
   font-weight: bold;
   font-size: larger;
-  background-image: url("");
+  background-image: url("https://images.immediate.co.uk/production/volatile/sites/2/2020/07/OliveSkewers_IndianKebabs_preview-48ce677.jpg?quality=90&resize=768,574");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 #header{ 
    font-size:xx-large;
 }
-
 .nav-bar {
   background-color: rgb(214, 147, 71);
   height: 100px;
   width: 100%;
 }
-
 .nav-bar ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
 }
-
+#nav-icon{
+  height: 1cm;
+  width: 1cm;
+  position: relative;
+  bottom: 0.5cm;
+}
 .home-page{
-  height: 100vh;
+  height: 140vh;
   width: 100%;
   /* background-image: url("https://images.immediate.co.uk/production/volatile/sites/2/2020/07/OliveSkewers_IndianKebabs_preview-48ce677.jpg?quality=90&resize=768,574"); */
 }
-
 #home-page-text{
   text-align: center;
   color: rgb(0, 0, 0);
 }
-
 .section{
-  background-color: white;
+  background-color: rgb(255, 248, 220);
   margin: 20px;
   text-align: center;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-  
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
 }
 .item-section{
   display: flex;
   /* border: solid black 1px; */
   justify-content: space-around;
 }
-.shopping-cart-page{
+#h2{
   display: flex;
-  flex-direction: column ;
+  justify-content: center;
+}
+.shopping-cart-page{
+  background-color: rgb(255, 248, 220);
   justify-content: center;
   text-align: center;
-  align-items: center;
   width: 50%;
   height: 400px;
   align-items: center;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);   
-}
-h2{
-  text-align: center;
+  margin: auto;
 }
 #shopping-cart-section{
   display: flex;
-  border: solid black 1px; 
   justify-content: space-around;
   align-items: center;
-  
-  }
+}
+#cart-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}    
 #check-out{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
-
 button{
   font-size: 0.8rem;
   padding: 0.2rem;
@@ -83,24 +85,12 @@ button{
   background-color: #f0c040;
   height: 2rem;
   cursor: pointer;
-  
 }
-
-
 .item-section img{
   height: 70px;
   width: 70px;
 }
-#cart{
-  height: 1cm;
-  width: 1cm;
-  position: relative;
-  bottom: 0.5cm;
-  
-}
-
 .menu-page {
-  background-color: antiquewhite;
   height: 140vh;
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
