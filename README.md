@@ -4,6 +4,7 @@
 This is my mi-mod project in Per Scholas.
 
 It is an app for ordering food with menu and a shopping card
+link https://zamiraraupova.github.io/food-order-project-react/
 ## Authors
 
 - [@zamiraraupova](https://www.github.com/zamiraraupova)
